@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.Board {
+    position: relative;
+    width: 600.50px;
+    height: 600.50px;
+    margin: 20px;
+    padding: 50px;
+    border: 1px ;    
+}
+
+.line {
+    stroke :black;
+    stroke-width: 2px;
+}
+
+table,tr, td{
+    text-align: center
+}
+
+
+.player1 {
+    r:10px ;
+    stroke:blue;
+    fill:transparent;
+    stroke-width:5;    
+}
+
+.player2 {
+    r:10px ;
+    stroke:green;
+    fill:transparent;
+    stroke-width:5;  
+}
+
+.vertical { 
+    border-left: 6px solid black; 
+    height: 200px; 
+    position:absolute; 
+    left: 50%; 
+} 
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 53%;
+    transform: translateX(-50%);
+    color: red;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-roll { top: 403px;}
+
+.dice {
+    position: absolute;
+    left: 53%;
+    top: 258px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.ladder{
+    stroke:orange;
+    fill:transparent;
+    stroke-width:5;
+    
+}
+
+.snake{
+    fill:none;
+    stroke:grey;
+    stroke-width:5;
+}
+
+.player-0-panel {
+   position: fixed;
+    top: 20%;
+    right: 20%;
+
+}
+.player-1-panel{
+    position: fixed;
+    top: 40%;
+    right: 20%;
+}
+
+.player-name{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-score{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;    
+}
+
+.winner .player-name {text-align: center; font-weight: 300; color: #EB4D4D; }
+
+
+
+
+

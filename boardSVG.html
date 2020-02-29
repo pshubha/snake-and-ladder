@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="index.css">
+        
+        <title>Snake & Ladder</title>
+    </head>
+
+    <?xml version="1.0" standalone="no"?>
+    <body>
+    <div class="wrapper clearfix">
+    <svg class="Board" xmlns="http://www.w3.org/2000/s" >
+
+        <rect x="0" y="0" width="50px" height="50px"  fill="white" stroke = "black" stroke-width = "2;"></rect>
+        <text x="15" y="30" color="blue">100</text>
+        <rect x="51" y="0" width="50px" height="50px"  style="fill:red" stroke = "black" stroke-width = "2;">99</rect>
+        <text x="66" y="30" color="black">99</text>
+        <rect x="101" y="0" width="50px" height="50px"  style="fill:white" stroke = "black" stroke-width = "2;">98</rect>
+        <text x="116" y="30" color="black">98</text>
+        <rect x="151" y="0" width="50px" height="50px"  style="fill:red" stroke = "black" stroke-width = "2;">97</rect>
+        <text x="166" y="30" color="black">97</text>        
+        <rect x="201" y="0" width="50px" height="50px"  style="fill:white" stroke = "black" stroke-width = "2;">96</rect>
+        <text x="216" y="30" color="black">96</text>        
+        <rect x="251" y="0" width="50px" height="50px"  style="fill:red" stroke = "black" stroke-width = "2;">95</rect>
+        <text x="266" y="30" color="black">95</text>        
+        <rect x="301" y="0" width="50px" height="50px"  style="fill:white" stroke = "black" stroke-width = "2;">94</rect>
+        <text x="315" y="30" color="black">94</text>        
+        <rect x="351" y="0" width="50px" height="50px"  style="fill:red" stroke = "black" stroke-width = "2;">93</rect>
+        <text x="366" y="30" color="black">93</text>        
+        <rect x="401" y="0" width="50px" height="50px"  style="fill:white" stroke = "black" stroke-width = "2;">92</rect>
+        <text x="415" y="30" color="black">92</text>        
+        <rect x="451" y="0" width="50px" height="50px"  style="fill:red" stroke = "black" stroke-width = "2;">91</rect>
+        <text x="466" y="30" color="black">91</text>
+        
+
+        <rect x="0" y="51" width="50px" height="50px"  style="fill:red" class = "line"></rect>
+        <text x="15" y="81" color="black">81</text>
+        <rect x="51" y="51" width="50px" height="50px"  style="fill:white" class = "line">99</rect>
+        <text x="66" y="81" color="black">82</text>
+        <rect x="101" y="51" width="50px" height="50px"  style="fill:red" class = "line">98</rect>
+        <text x="116" y="81" color="black">83</text>
+        <rect x="151" y="51" width="50px" height="50px"  style="fill:white" class = "line">97</rect>
+        <text x="166" y="81" color="black">84</text>
+        <rect x="201" y="51" width="50px" height="50px"  style="fill:red" class = "line">96</rect>
+        <text x="216" y="81" color="black">85</text>
+        <rect x="251" y="51" width="50px" height="50px"  style="fill:white" class = "line">95</rect>
+        <text x="266" y="81" color="black">86</text>
+        <rect x="301" y="51" width="50px" height="50px"  style="fill:red" class = "line">94</rect>
+        <text x="315" y="81" color="black">87</text>
+        <rect x="351" y="51" width="50px" height="50px"  style="fill:white" class = "line">93</rect>
+        <text x="366" y="81" color="black">88</text>
+        <rect x="401" y="51" width="50px" height="50px"  style="fill:red" class = "line">92</rect>
+        <text x="415" y="81" color="black">89</text>
+        <rect x="451" y="51" width="50px" height="50px"  style="fill:white" class = "line">91</rect>
+        <text x="466" y="81" color="black">90</text>
+        
+        <rect x="0" y="101" width="50px" height="50px"  style="fill:white" class = "line"></rect>
+        <text x="15" y="131" color="black">80</text>
+        <rect x="51" y="101" width="50px" height="50px"  style="fill:red" class = "line">99</rect>
+        <text x="66" y="131" color="black">79</text>
+        <rect x="101" y="101" width="50px" height="50px"  style="fill:white" class = "line">98</rect>
+        <text x="116" y="131" color="black">78</text>
+        <rect x="151" y="101" width="50px" height="50px"  style="fill:red" class = "line">97</rect>
+        <text x="166" y="131" color="black">77</text>
+        <rect x="201" y="101" width="50px" height="50px"  style="fill:white" class = "line">96</rect>
+        <text x="216" y="131" color="black">76</text>
+        <rect x="251" y="101" width="50px" height="50px"  style="fill:red" class = "line">95</rect>
+        <text x="266" y="131" color="black">75</text>
+        <rect x="301" y="101" width="50px" height="50px"  style="fill:white" class = "line">94</rect>
+        <text x="315" y="131" color="black">74</text>
+        <rect x="351" y="101" width="50px" height="50px"  style="fill:red" class = "line">93</rect>
+        <text x="366" y="131" color="black">73</text>
+        <rect x="401" y="101" width="50px" height="50px"  style="fill:white" class = "line">92</rect>
+        <text x="415" y="131" color="black">72</text>
+        <rect x="451" y="101" width="50px" height="50px"  style="fill:red" class = "line">91</rect>
+        <text x="466" y="131" color="black">71</text>
+        
+        <rect x="0" y="151" width="50px" height="50px"  style="fill:red" class = "line"></rect>
+        <text x="15" y="181" color="black">61</text>
+        <rect x="51" y="151" width="50px" height="50px"  style="fill:white" class = "line">99</rect>
+        <text x="66" y="181" color="black">62</text>
+        <rect x="101" y="151" width="50px" height="50px"  style="fill:red" class = "line">98</rect>
+        <text x="116" y="181" color="black">63</text>
+        <rect x="151" y="151" width="50px" height="50px"  style="fill:white" class = "line">97</rect>
+        <text x="166" y="181" color="black">64</text>
+        <rect x="201" y="151" width="50px" height="50px"  style="fill:red" class = "line">96</rect>
+        <text x="216" y="181" color="black">65</text>
+        <rect x="251" y="151" width="50px" height="50px"  style="fill:white" class = "line">95</rect>
+        <text x="266" y="181" color="black">66</text>
+        <rect x="301" y="151" width="50px" height="50px"  style="fill:red" class = "line">94</rect>
+        <text x="315" y="181" color="black">67</text>
+        <rect x="351" y="151" width="50px" height="50px"  style="fill:white" class = "line">93</rect>
+        <text x="366" y="181" color="black">68</text>
+        <rect x="401" y="151" width="50px" height="50px"  style="fill:red" class = "line">92</rect>
+        <text x="415" y="181" color="black">69</text>
+        <rect x="451" y="151" width="50px" height="50px"  style="fill:white" class = "line">91</rect>
+        <text x="466" y="181" color="black">70</text>
+        
+        <rect x="0" y="201" width="50px" height="50px"  style="fill:white" class = "line"></rect>
+        <text x="15" y="231" color="black">60</text>
+        <rect x="51" y="201" width="50px" height="50px"  style="fill:red" class = "line">99</rect>
+        <text x="66" y="231" color="black">59</text>
+        <rect x="101" y="201" width="50px" height="50px"  style="fill:white" class = "line">98</rect>
+        <text x="116" y="231" color="black">58</text>
+        <rect x="151" y="201" width="50px" height="50px"  style="fill:red" class = "line">97</rect>
+        <text x="166" y="231" color="black">57</text>
+        <rect x="201" y="201" width="50px" height="50px"  style="fill:white" class = "line">96</rect>
+        <text x="216" y="231" color="black">56</text>
+        <rect x="251" y="201" width="50px" height="50px"  style="fill:red" class = "line">95</rect>
+        <text x="266" y="231" color="black">55</text>
+        <rect x="301" y="201" width="50px" height="50px"  style="fill:white" class = "line">94</rect>
+        <text x="315" y="231" color="black">54</text>
+        <rect x="351" y="201" width="50px" height="50px"  style="fill:red" class = "line">93</rect>
+        <text x="366" y="231" color="black">53</text>
+        <rect x="401" y="201" width="50px" height="50px"  style="fill:white" class = "line">92</rect>
+        <text x="415" y="231" color="black">52</text>
+        <rect x="451" y="201" width="50px" height="50px"  style="fill:red" class = "line">91</rect>
+        <text x="466" y="231" color="black">51</text>
+        
+        <rect x="0" y="251" width="50px" height="50px"  style="fill:red" class = "line"></rect>
+        <text x="15" y="281" color="black">41</text>
+        <rect x="51" y="251" width="50px" height="50px"  style="fill:white" class = "line">99</rect>
+        <text x="66" y="281" color="black">42</text>
+        <rect x="101" y="251" width="50px" height="50px"  style="fill:red" class = "line">98</rect>
+        <text x="116" y="281" color="black">43</text>
+        <rect x="151" y="251" width="50px" height="50px"  style="fill:white" class = "line">97</rect>
+        <text x="166" y="281" color="black">44</text>
+        <rect x="201" y="251" width="50px" height="50px"  style="fill:red" class = "line">96</rect>
+        <text x="216" y="281" color="black">45</text>
+        <rect x="251" y="251" width="50px" height="50px"  style="fill:white" class = "line">95</rect>
+        <text x="266" y="281" color="black">46</text>
+        <rect x="301" y="251" width="50px" height="50px"  style="fill:red" class = "line">94</rect>
+        <text x="315" y="281" color="black">47</text>
+        <rect x="351" y="251" width="50px" height="50px"  style="fill:white" class = "line">93</rect>
+        <text x="366" y="281" color="black">48</text>
+        <rect x="401" y="251" width="50px" height="50px"  style="fill:red" class = "line">92</rect>
+        <text x="415" y="281" color="black">49</text>
+        <rect x="451" y="251" width="50px" height="50px"  style="fill:white" class = "line">91</rect>
+        <text x="466" y="281" color="black">50</text>
+        
+        <rect x="0" y="301" width="50px" height="50px"  style="fill:white" class = "line"></rect>
+        <text x="15" y="331" color="black">40</text>
+        <rect x="51" y="301" width="50px" height="50px"  style="fill:red" class = "line">99</rect>
+        <text x="66" y="331" color="black">39</text>
+        <rect x="101" y="301" width="50px" height="50px"  style="fill:white" class = "line">98</rect>
+        <text x="116" y="331" color="black">38</text>
+        <rect x="151" y="301" width="50px" height="50px"  style="fill:red" class = "line">97</rect>
+        <text x="166" y="331" color="black">37</text>
+        <rect x="201" y="301" width="50px" height="50px"  style="fill:white" class = "line">96</rect>
+        <text x="216" y="331" color="black">36</text>
+        <rect x="251" y="301" width="50px" height="50px"  style="fill:red" class = "line">95</rect>
+        <text x="266" y="331" color="black">35</text>
+        <rect x="301" y="301" width="50px" height="50px"  style="fill:white" class = "line">94</rect>
+        <text x="315" y="331" color="black">34</text>
+        <rect x="351" y="301" width="50px" height="50px"  style="fill:red" class = "line">93</rect>
+        <text x="366" y="331" color="black">33</text>
+        <rect x="401" y="301" width="50px" height="50px"  style="fill:white" class = "line">92</rect>
+        <text x="415" y="331" color="black">32</text>
+        <rect x="451" y="301" width="50px" height="50px"  style="fill:red" class = "line">91</rect>
+        <text x="466" y="331" color="black">31</text>
+        
+        <rect x="0" y="351" width="50px" height="50px"  style="fill:red" class = "line"></rect>
+        <text x="15" y="381" color="black">21</text>
+        <rect x="51" y="351" width="50px" height="50px"  style="fill:white" class = "line">99</rect>
+        <text x="66" y="381" color="black">22</text>
+        <rect x="101" y="351" width="50px" height="50px"  style="fill:red" class = "line">98</rect>
+        <text x="116" y="381" color="black">23</text>
+        <rect x="151" y="351" width="50px" height="50px"  style="fill:white" class = "line">97</rect>
+        <text x="166" y="381" color="black">24</text>
+        <rect x="201" y="351" width="50px" height="50px"  style="fill:red" class = "line">96</rect>
+        <text x="215" y="381" color="black">25</text>
+        <rect x="251" y="351" width="50px" height="50px"  style="fill:white" class = "line">95</rect>
+        <text x="266" y="381" color="black">26</text>
+        <rect x="301" y="351" width="50px" height="50px"  style="fill:red" class = "line">94</rect>
+        <text x="315" y="381" color="black">27</text>
+        <rect x="351" y="351" width="50px" height="50px"  style="fill:white" class = "line">93</rect>
+        <text x="366" y="381" color="black">28</text>
+        <rect x="401" y="351" width="50px" height="50px"  style="fill:red" class = "line">92</rect>
+        <text x="415" y="381" color="black">29</text>
+        <rect x="451" y="351" width="50px" height="50px"  style="fill:white" class = "line">91</rect>
+        <text x="466" y="381" color="black">30</text>
+
+        <rect x="0" y="401" width="50px" height="50px"  style="fill:white" class = "line"></rect>
+        <text x="15" y="431" color="black">20</text>
+        <rect x="51" y="401" width="50px" height="50px"  style="fill:red" class = "line">99</rect>
+        <text x="66" y="431" color="black">19</text>
+        <rect x="101" y="401" width="50px" height="50px"  style="fill:white" class = "line">98</rect>
+        <text x="116" y="431" color="black">18</text>
+        <rect x="151" y="401" width="50px" height="50px"  style="fill:red" class = "line">97</rect>
+        <text x="166" y="431" color="black">17</text>
+        <rect x="201" y="401" width="50px" height="50px"  style="fill:white" class = "line">96</rect>
+        <text x="215" y="431" color="black">16</text>
+        <rect x="251" y="401" width="50px" height="50px"  style="fill:red" class = "line">95</rect>
+        <text x="266" y="431" color="black">15</text>
+        <rect x="301" y="401" width="50px" height="50px"  style="fill:white" class = "line">94</rect>
+        <text x="315" y="431" color="black">14</text>
+        <rect x="351" y="401" width="50px" height="50px"  style="fill:red" class = "line">93</rect>
+        <text x="366" y="431" color="black">13</text>
+        <rect x="401" y="401" width="50px" height="50px"  style="fill:white" class = "line">92</rect>
+        <text x="415" y="431" color="black">12</text>
+        <rect x="451" y="401" width="50px" height="50px"  style="fill:red" class = "line">91</rect>
+        <text x="466" y="431" color="black">11</text>
+
+        <rect x="0" y="451" width="50px" height="50px"  style="fill:red" class = "line"></rect>        
+        <text x="20" y="481" color="black">1</text>
+        <rect x="51" y="451" width="50px" height="50px"  style="fill:white" class = "line">99</rect>       
+        <text x="70" y="481" color="black">2</text>
+        <rect x="101" y="451" width="50px" height="50px"  style="fill:red" class = "line">98</rect>
+        <text x="120" y="481" color="black">3</text>
+        <rect x="151" y="451" width="50px" height="50px"  style="fill:white" class = "line">97</rect>
+        <text x="170" y="481" color="black">4</text>
+        <rect x="201" y="451" width="50px" height="50px"  style="fill:red" class = "line">96</rect>
+        <text x="220" y="481" color="black">5</text>
+        <rect x="251" y="451" width="50px" height="50px"  style="fill:white" class = "line">95</rect>
+        <text x="270" y="481" color="black">6</text>
+        <rect x="301" y="451" width="50px" height="50px"  style="fill:red" class = "line">94</rect>
+        <text x="320" y="481" color="black">7</text>
+        <rect x="351" y="451" width="50px" height="50px"  style="fill:white" class = "line">93</rect>
+        <text x="370" y="481" color="black">8</text>
+        <rect x="401" y="451" width="50px" height="50px"  style="fill:red" class = "line">92</rect>
+        <text x="420" y="481" color="black">9</text>
+        <rect x="451" y="451" width="50px" height="50px"  style="fill:white" class = "line">91</rect>
+        <text x="466" y="481" color="black">10</text>
+
+        <circle class ="player1" id = "player1" cx ="20" cy ="481" />
+        <circle class ="player2" id = "player2" cx = "70" cy = "468"/> 
+
+
+        <line x1="30" x2="70" y1="181" y2="370" class = "ladder"/>
+        <line x1="166" x2="216" y1="30" y2="181" class = "ladder"/>
+        <line x1="366" x2="333" y1="181" y2="238" class = "ladder"/>
+        <line x1="366" x2="415" y1="30" y2="131" class = "ladder"/>
+        <line x1="415" x2="365" y1="381" y2="481" class = "ladder"/>
+
+        <path d="M66,38 Q40,101 130,240 T160,375" class="snake"/>
+        <path d="M466,89 Q411,70 451,181 T454,270" class="snake"/>
+        <path d="M217,281 Q180,299 230,389 T226,481" class="snake"/>
+        <path d="M315,181 Q285,235 285,285 T366,381" class="snake"/>
+        <path d="M111,378 Q120,400 151,401 T160,429" class="snake"/>
+            
+        
+    </svg>
+    <div class="player-1-panel">
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">72</div>
+    </div>
+    <div class="player-0-panel">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">43</div>
+    </div>
+
+    <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+    
+    <img src="dice-5.png" alt="Dice" class="dice">
+    </div>
+
+    <script src="board.js"></script>
+</body>
+</html>
